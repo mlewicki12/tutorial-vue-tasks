@@ -1,5 +1,5 @@
 <template>
-  <button :style='{background: color}' @click='onClick()'
+  <button :style='{background: color}' @click="this.$emit('toggle')"
     class='btn'>{{ text }}</button>
 </template>
 
@@ -10,10 +10,5 @@
       text: String,
       color: String
     },
-    methods: {
-      onClick() {
-        console.log('click');
-      }
-    }
   }
 </script>
