@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <AddTask v-show='showAddTask' @add-task='addTask' />
-  </div>
+  <AddTask v-show='showAddTask' @add-task='addTask' />
 
   <Tasks
     @delete-task='deleteTask'
